@@ -1,0 +1,35 @@
+---
+title: "Practical 1"
+author: "Anna Venancio"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(pacman)
+pacman::p_load(foreign,tidyverse)
+```
+
+## Exercise 3: Zambia
+
+### 3.a
+
+```{r}
+data <- read.spss("/Users/annavenancio/OneDrive - unige.ch/R_projects/MSHD_Spring2023/Datasets/Zambia.SAV", to.data.frame=TRUE)
+head(data)
+dim(data)
+
+dataset=read_sav(file.choose())
+dim(dataset)
+head(dataset)
+
+```
+
+### 3.b
+### 3.c
+### 3.d
+### 3.e
+
+## Exercise 4
